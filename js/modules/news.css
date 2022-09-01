@@ -1,0 +1,15 @@
+.splide{
+    padding: 20px 10px;
+  }
+  
+  .splide__slide{
+    padding: 10px;
+  }
+  
+  .splide__slide img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: .5rem .5rem 1rem #ccc;
+    margin: 10px 0px;
+  }
+  

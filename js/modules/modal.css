@@ -1,0 +1,83 @@
+
+
+
+.modal__control{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .interactiveButton{
+    background-color: transparent;
+    font-weight: bold;
+    color: #444;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border: 2px solid #eee;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem #ccc,
+                -.5rem -.5rem 1rem #fff;
+  }
+  
+  
+  .interactiveButton:hover{
+    box-shadow: .5rem .5rem 1rem #fff,
+                -.5rem -.5rem 1rem #ccc;
+    color: black;
+  }
+  
+  .interactiveButton:active{
+    box-shadow: inset .2rem .2rem 1rem #fff,
+                inset -.2rem -.2rem 1rem #ccc;
+  }
+  
+  
+  #modal {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    transition: all 0.5s;
+  }
+  
+  #modal__content {
+    width: 60%;
+    height:fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: 1.5em;
+    padding: 20px 20px 60px;
+    text-align: center;
+    background-color: #eee;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px rgba(12, 12, 71, 0.651);
+  }
+  
+  
+  
+  
+  
+  .modal__label--show{
+    color: rgb(26, 33, 100);
+    cursor: pointer;
+  }
+  
+  .modal__label--close {
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+    color: rgb(136, 39, 27);
+  }
+  
+  

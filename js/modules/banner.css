@@ -1,0 +1,60 @@
+
+#banner{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+  }
+  
+  
+  #banner img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: .5rem .5rem 1rem #ccc;
+  }
+  
+  #banner div{
+    padding: 10px;
+  }
+  #banner label{
+    margin: 20px 10px;
+  }
+
+    
+  .interactiveButton{
+    background-color: transparent;
+    font-weight: bold;
+    color: #444;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border: 2px solid #eee;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    box-shadow: .5rem .5rem 1rem #ccc,
+                -.5rem -.5rem 1rem #fff;
+  }
+  
+  
+  .interactiveButton:hover{
+    box-shadow: .5rem .5rem 1rem #fff,
+                -.5rem -.5rem 1rem #ccc;
+    color: black;
+  }
+  
+  .interactiveButton:active{
+    box-shadow: inset .2rem .2rem 1rem #fff,
+                inset -.2rem -.2rem 1rem #ccc;
+  }
+    
+  .modal__control{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  
+  .modal__label--show{
+    color: rgb(26, 33, 100);
+    cursor: pointer;
+  }

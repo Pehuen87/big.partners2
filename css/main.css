@@ -1,0 +1,85 @@
+/* FONTS
+Listas fuentes para uso
+--- */
+@import url('https://fonts.googleapis.com/css?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+
+/* @group SHARED STRUCTURES AND STYLES
+------------------------------------ */
+body { overflow-x: hidden; }
+#wrapper { width: 100%; }
+a, button { cursor: pointer;
+    -webkit-transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, box-shadow 0.3s linear, -webkit-transform 0.3s linear;
+    -moz-transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, box-shadow 0.3s linear, -moz-transform 0.3s linear;
+    -ms-transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, box-shadow 0.3s linear, transform 0.3s linear;
+    -o-transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, box-shadow 0.3s linear, transform 0.3s linear;
+    transition: color 0.27s linear, background 0.27s linear, border-color 0.27s linear, opacity 0.3s linear, visibility 0.3s linear, box-shadow 0.3s linear, transform 0.3s linear;
+}
+.video-box,
+.img-box { overflow: hidden; position: relative; }
+.img-box > img { object-fit: cover; object-position: center center; height: 100%; width: 100%!important; }
+.img-box video { object-fit: cover; object-position: center center; height: 100%; width: 100%!important; }
+@supports(object-fit: cover) {
+  .img-box > img { height: 100%!important; }
+}
+/* General Text
+----------------------*/
+
+body{
+  background-color: #eee;
+  font-family: 'Rubik';
+}
+
+
+h1, h2, h3 {
+  font-family: 'DynaPuff';
+}
+
+ 
+
+
+
+
+@media only screen
+and (min-width : 769px) {
+}
+@media only screen
+and (min-width : 769px)
+and (max-width : 1440px) {
+}
+@media only screen
+and (min-width : 0)
+and (max-width : 768px) {
+}
+
+/* @end */
+
+/* @group RESET GENERAL DE TAMAÑO
+------------------------------------ */
+.no-mobile {}
+
+@media only screen
+and (min-width : 769px) {
+  .mobile { display: none!important; }
+}
+@media only screen
+and (min-width : 769px)
+and (max-width : 1440px) {
+}
+@media only screen
+and (min-width : 0)
+and (max-width : 768px) {
+  .no-mobile { display: none!important; }
+  /* html { font-size: 7px; } */
+}
+@media only screen
+and (min-width : 0)
+and (max-width : 600px) {
+  /* html { font-size: 5px; } */
+}
+/* @end */
+
+/* --- */

@@ -1,0 +1,39 @@
+
+
+#header{
+    width: 100%;
+    position: relative;
+  }
+  
+  
+  
+  #videoFullWidth{
+    position: relative;
+    min-width: 100%;
+    width: 100%;
+  }
+  
+  
+  #videoFullWidth__title{
+    font-size: 2.5em;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px white, -1px -1px white, -1px 1px white, 1px -1px white;
+  
+  }
+  
+  #videoFullWidth__volume{
+    position:absolute;
+    top:20px;
+    right: 20px;
+    opacity: .7;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  #videoFullWidth__volume:hover{
+    opacity: 1;
+    color: blue;
+  }
