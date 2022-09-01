@@ -13,8 +13,8 @@ export class Modal {
             console.log('Modal ya creado');
             return; 
         }else{
-            var head = document.getElementsByTagName('HEAD')[0];
-            var link = document.createElement('link');
+            let head = document.getElementsByTagName('HEAD')[0];
+            let link = document.createElement('link');
             link.rel = 'stylesheet';
             link.type = 'text/css';
             link.href = 'js/modules/modal.css';

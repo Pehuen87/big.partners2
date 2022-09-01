@@ -15,12 +15,15 @@ export class Banner {
             console.log('Banner ya creado');
             return; 
         }else{
-            var head = document.getElementsByTagName('HEAD')[0];
-            var link = document.createElement('link');
+            let head = document.getElementsByTagName('HEAD')[0];
+            let link = document.createElement('link');
             link.rel = 'stylesheet';
             link.type = 'text/css';
             link.href = 'js/modules/banner.css';
-            head.appendChild(link);
+
+
+            head.append(link);
+
 
 
             let bannerElem = document.createElement('div');

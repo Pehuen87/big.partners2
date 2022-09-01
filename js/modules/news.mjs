@@ -47,12 +47,21 @@ export class NewsFeed {
             return;
         } else {
 
-            var head = document.getElementsByTagName('HEAD')[0];
-            var link = document.createElement('link');
+            let head = document.getElementsByTagName('HEAD')[0];
+            
+            let link = document.createElement('link');
             link.rel = 'stylesheet';
             link.type = 'text/css';
             link.href = 'js/modules/news.css';
-            head.appendChild(link);
+
+
+
+            head.append( link);
+
+            
+
+
+
 
             let section = document.createElement('section');
             let track = document.createElement('div');
