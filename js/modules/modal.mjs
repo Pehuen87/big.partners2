@@ -22,7 +22,7 @@ export class Modal {
 
             let modalWrapper = document.createElement('div');
             let modalElem = document.createElement('div');
-            let titleElem = document.createElement('h1');
+            let titleElem = document.createElement('h2');
             let pElem = document.createElement('p');
             let modalButton = document.createElement('button');
 

@@ -1,39 +1,52 @@
+#header {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
 
 
-#header{
-    width: 100%;
-    position: relative;
+
+#videoFullWidth {
+  width: 100%;
+}
+
+
+#videoFullWidth__title {
+  position: absolute;
+  bottom: 40px;
+  left: 138px;
+}
+
+#videoFullWidth__volume {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: .7;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#videoFullWidth__volume:hover {
+  opacity: 1;
+  color: var(--unnamed-color-0064a8);
+}
+
+#header span {
+  color: var(--unnamed-color-162e5a);
+  text-align: left;
+  font: normal normal normal 48px/56px 'Poppins';
+  letter-spacing: 0px;
+  color: #FFFFFF;
+}
+
+
+@media only screen and (max-width : 769px) {
+  #videoFullWidth {
+    width: unset;
   }
-  
-  
-  
-  #videoFullWidth{
-    position: relative;
-    min-width: 100%;
-    width: 100%;
+
+  #videoFullWidth__title {
+    bottom: 7px;
+    left: 20px;
   }
-  
-  
-  #videoFullWidth__title{
-    font-size: 2.5em;
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-shadow: 1px 1px white, -1px -1px white, -1px 1px white, 1px -1px white;
-  
-  }
-  
-  #videoFullWidth__volume{
-    position:absolute;
-    top:20px;
-    right: 20px;
-    opacity: .7;
-    font-size: 2em;
-    cursor: pointer;
-  }
-  
-  #videoFullWidth__volume:hover{
-    opacity: 1;
-    color: blue;
-  }
+}

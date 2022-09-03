@@ -2,32 +2,36 @@
 
 
 export class News {
-    constructor(titulo, img, alt, parrafo) {
+    constructor(titulo, img, alt, fecha, href) {
         this.img = img;
         this.alt = alt;
         this.titulo = titulo;
-        this.parrafo = parrafo;
+        this.fecha = fecha;
+        this.href = href;
     }
 
     create(parent) {
 
+        
         let liElem = document.createElement('li');
+        let newsWrapper = document.createElement('div');
+        let dateElem = document.createElement('h4');
         let titleElem = document.createElement('h3');
         let imgElem = document.createElement('img');
-        let pElem = document.createElement('p');
+        let aElem = document.createElement('a');
 
         liElem.classList.add('splide__slide');
+        newsWrapper.classList.add('splide__newsContainer');
         imgElem.src = this.img;
         imgElem.alt = this.alt;
         titleElem.innerHTML = this.titulo;
-        pElem.innerHTML = this.parrafo;
+        dateElem.innerHTML = this.fecha;
+        aElem.href = this.href;
+        aElem.innerHTML = "READ MORE";
 
         parent.appendChild(liElem);
-        liElem.appendChild(titleElem);
-        liElem.appendChild(document.createElement('br'));
-        liElem.appendChild(imgElem);
-        liElem.appendChild(document.createElement('br'));
-        liElem.appendChild(pElem);
+        liElem.appendChild(newsWrapper);
+        newsWrapper.append(imgElem, dateElem, titleElem, aElem);
 
     }
 }
@@ -84,12 +88,13 @@ export class NewsFeed {
 
             new Splide('#image-carousel', {
                 arrows: false,  //no display of arrows 
-                perPage: 3,     //on media > 640 shows all 3 slides, acting like 3 columns 
+                perPage: 3,     //on media > 1000 shows all 3 slides, acting like 3 columns 
                 pagination: false, //no diplay of dots
                 mediaQuery: 'max',
+                height: '406px',
                 breakpoints: {
-                    640: {
-                        perPage: 1, //on media < 640 shows only 1 slide per page. 
+                    1000: {
+                        perPage: 1, //on media < 1000 shows only 1 slide per page. 
                     }
                 }
             }).mount();

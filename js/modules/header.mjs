@@ -25,17 +25,17 @@ export class VideoFullWidth {
             let divWrapper = document.createElement('div');
             let videoElem = document.createElement('video');
             let titleWrapper = document.createElement('div');
-            let titleElem = document.createElement('h1');
+            let titleElem = document.createElement('span');
             let iElem = document.createElement('i');
 
 
             this.parent.appendChild(divWrapper);
                 divWrapper.appendChild(videoElem);
-            this.parent.appendChild(titleWrapper);
+                divWrapper.appendChild(titleWrapper);
                 titleWrapper.appendChild(titleElem);
-            this.parent.appendChild(iElem);
+                divWrapper.appendChild(iElem);
 
-            divWrapper.classList.add('header');
+            divWrapper.id='header';
 
             videoElem.id = "videoFullWidth";
             videoElem.src = this.video;

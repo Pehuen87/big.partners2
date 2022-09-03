@@ -52,9 +52,9 @@
 
 		<!--primer modulo-->
 		<script  type="module">
-			import { VideoFullWidth } from './js/modules/header.mjs';
+			import {VideoFullWidth} from './js/modules/header.mjs';
 
-			let video = new VideoFullWidth('https://files.estadodigital.com/video/video.mp4', './img/temp/001.jpg', 'Título del video', document.getElementById('wrapper'));
+			let video = new VideoFullWidth('https://files.estadodigital.com/video/video.mp4', './img/temp/001.jpg', '<b>FUN</b> HEADLINE <b>EVENTS</b>', document.getElementById('wrapper'));
 			video.create();
 		</script>
 		<!--fin primer modulo-->
@@ -64,9 +64,9 @@
 			import { News, NewsFeed } from './js/modules/news.mjs';
 
 
-			let noticia1 = new News('Título1', './img/temp/002.jpg', 'alt de la imagen', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.');
-			let noticia2 = new News('Título2', './img/temp/002.jpg', 'alt de la imagen', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. ');
-			let noticia3 = new News('Título3', './img/temp/002.jpg', 'alt de la imagen', 'hLorem ipsum dolor sit amet, consectetur adipiscing elit. ');
+			let noticia1 = new News('Sed ut perspiciatis unde omnis iste natus error sit voluptatem.', './img/temp/002.jpg', 'alt de la imagen', 'February 21, 2020', 'link');
+			let noticia2 = new News('Sed ut perspiciatis unde omnis iste natus error sit voluptatem.', './img/temp/002.jpg', 'alt de la imagen', 'February 21, 2020', 'link');
+			let noticia3 = new News('Sed ut perspiciatis unde omnis iste natus error sit voluptatem.', './img/temp/002.jpg', 'alt de la imagen', 'February 21, 2020', 'link');
 
 			let feed = new NewsFeed([noticia1, noticia2, noticia3], document.getElementById('wrapper'));
 
@@ -80,8 +80,8 @@
 			import { Banner } from './js/modules/banner.mjs';
 			import { Modal } from './js/modules/modal.mjs';
 			
-			let modal = new Modal('Título del Modal','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam', document.getElementById('wrapper'));
-			let banner = new Banner('./img/temp/003.jpg', 'Título del Banner','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam ' , modal,  document.getElementById('wrapper'));
+			let modal = new Modal('Shop & dine here','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam', document.getElementById('wrapper'));
+			let banner = new Banner('./img/temp/003.jpg', 'Imagine More Fun Times','From boutique shops to baseball games, all-day eateries to stunning sunsets, there are hundreds of ways to brighten your days.' , modal,  document.getElementById('wrapper'));
 			
 			banner.create();
 			modal.create();

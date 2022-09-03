@@ -27,7 +27,7 @@ export class Banner {
 
 
             let bannerElem = document.createElement('div');
-            let titleElem = document.createElement('h1');
+            let titleElem = document.createElement('h2');
             let imgWrapper = document.createElement('div');
             let textWrapper = document.createElement('div');
             let imgElem = document.createElement('img');
@@ -42,15 +42,14 @@ export class Banner {
             pElem.innerHTML = this.parrafo;
 
             modalButton.innerHTML = this.modal.titulo;
-            modalControl.classList.add('modal__control');
-            modalButton.classList.add('interactiveButton', 'modal__label--show');
+            modalButton.classList.add('interactiveButton');
 
             this.parent.appendChild(bannerElem);
                 bannerElem.appendChild(imgWrapper);
                     imgWrapper.appendChild(imgElem);
                 bannerElem.appendChild(textWrapper);
-                    textWrapper.append(titleElem, pElem, modalControl);
-                    modalControl.appendChild(modalButton);
+                    textWrapper.appendChild(modalControl);
+                    modalControl.append(titleElem, pElem, modalButton);
 
             modalButton.addEventListener('click', () => {  this.modal.show();})
             
