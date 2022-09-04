@@ -41,7 +41,7 @@ export class Banner {
             titleElem.innerHTML= this.titulo;
             pElem.innerHTML = this.parrafo;
 
-            modalButton.innerHTML = this.modal.titulo;
+            modalButton.innerHTML = this.modal.boton;
             modalButton.classList.add('interactiveButton');
 
             this.parent.appendChild(bannerElem);

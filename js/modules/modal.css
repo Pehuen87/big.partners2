@@ -4,7 +4,7 @@
   
   
   #modal {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.1);
     color: #fff;
     position: fixed;
     top: -100%;
@@ -15,54 +15,59 @@
   }
   
   #modal__content {
-    width: 60%;
-    height: 80%;
+    width: 93%;
+    height: 93%;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     margin: auto;
-    padding: 20px 20px 60px;
-    text-align: center;
     background-color: #ffffff;
-    color: var(--unnamed-color-162e5a);
     border: 1px solid #707070;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   
   
 #modal h2 {
   color: var(--unnamed-color-162e5a);
-  text-align: left;
+  text-align: center;
   font-size: 32px;
   line-height: 48px;
   font-family: 'Open Sans';
   font-weight: bold;
   letter-spacing: 0px;
   opacity: 1;
-  margin-top: 107px;
-  margin-left: 83px;
-  margin-right: 83px;
+  margin-bottom: 14px;
 }
 
 #modal p {
   color: var(--unnamed-color-0064a8);
-  text-align: left;
-  font: normal normal normal 14px/36px Open Sans;
+  text-align: center;
+  font: normal normal normal 14px/36px 'Open Sans';
   letter-spacing: 0px;
   opacity: 1;
-  margin-left: 83px;
-  margin-right: 83px;
-  margin-top: 25px;
+  margin-bottom: 25px;
+  max-width: 453px;
 }
   
 
   .modal__label--close {
-    position:absolute;
-    bottom: 10px;
-    right: 10px;
+    color: var(--unnamed-color-162e5a);
+    padding: 0;
+    background-color: #ffffff;
+    width: 195px;
+  }
+
+  .modal__label--close:hover{
+    
+    background-color: var(--unnamed-color-162e5a);
+    color: #ffffff;
   }
 
 
@@ -70,17 +75,13 @@
   @media only screen and (max-width : 769px) {
 
     #modal__content {
-      width: 90%;
+      width: calc(100% - 1px);
+      height: 97%;
     }
-    #modal h2 {
-      margin-top: 40px;
-      margin-left: 23px;
-      margin-right: 23px;
-    }
-    
+ 
     #modal p {
-      margin-left: 23px;
-      margin-right: 23px;
+      margin-left: 29px;
+      margin-right: 29px;
     }
   }
   

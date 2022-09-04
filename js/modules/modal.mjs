@@ -1,9 +1,10 @@
 
 
 export class Modal {
-    constructor(titulo, parrafo,  parent) {
+    constructor(titulo, parrafo, boton ,  parent) {
         this.parrafo = parrafo;
         this.titulo = titulo;
+        this.boton = boton;
         this.parent = parent;
         this.created= false;
     }
@@ -32,7 +33,7 @@ export class Modal {
             titleElem.innerHTML= this.titulo;
             pElem.innerHTML = this.parrafo;
 
-            modalButton.innerHTML = "Cerrar Ventana";
+            modalButton.innerHTML = "CLOSE";
             modalButton.classList.add('interactiveButton', 'modal__label--close');
 
             this.parent.appendChild(modalWrapper);
